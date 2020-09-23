@@ -6,9 +6,11 @@ export default function Slide(props) {
 
   return (
     <div {...rest} className="slide">
-      <TextContainer idyll={idyll}>
-        {children}
-      </TextContainer>
+      <div className="slide__inner">
+        <TextContainer idyll={idyll}>
+          {children}
+        </TextContainer>
+      </div>
     </div>
   );
 }
