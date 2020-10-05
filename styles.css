@@ -31,10 +31,10 @@ body {
 
 .slide__inner {
   position: relative;
-  max-height: 90vh;
-  max-width: 90vw;
-  height: 100%;
-  width: 100%;
+  height: 90vh;
+  width: 90vw;
+  max-width: 1500px;
+  max-height: 800px;
   margin: 5vh 5vw;
   padding: 1em;
   box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.50);
@@ -71,6 +71,9 @@ body {
 
 .idyll-text-container {
   max-width: 90% !important;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .article-header a {
@@ -84,4 +87,64 @@ body {
 
 h1.hed {
   font-size: 3.5em;
+}
+
+.slide.slide--image-only .idyll-text-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.slide.slide--image-only .idyll-text-container img {
+  max-height: 80%;
+  width: auto;
+}
+
+.slide.slide--with-image .idyll-text-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.slide.slide--with-image .idyll-text-container img {
+  height: 80%;
+  max-height: 530px;
+  width: auto;
+  margin: auto;
+}
+
+.slide.slide--twitter-left .twitter-tweet.twitter-tweet-rendered {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translatey(-50%);
+}
+
+.slide.slide--tweet-center .idyll-text-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slide.slide--tweet-center .idyll-text-container > div {
+  width: 100%;
+}
+
+.slide.slide--tweet-center .twitter-tweet.twitter-tweet-rendered {
+  margin: 0 auto;
+}
+
+.slide.slide--large-text {
+  font-size: 4em;
+}
+
+.slide.slide--center-text .idyll-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

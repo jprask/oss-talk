@@ -1,17 +1,21 @@
 [meta
-  title:"Open Source Primer"
-  description:"Como e porque contribuir com OSS"
+  title:"Open Source Software"
+  description:"Como e porque contribuir"
 /]
 
 [var name:"currentSlide" value:0 /]
 [var name:"numSlides" value:0 /]
 
+[data name:"idyll" source:"idyll.json" /]
+[data name:"forem" source:"forem.json" /]
+[data name:"adminLTE" source:"adminLTE.json" /]
+
 [Slideshow currentSlide:currentSlide numSlides:numSlides fullWidth:true]
 
   [Slide]
     [Header
-      title:"Open Source Primer"
-      subtitle:"Como e porque contribuir com OSS"
+      title:"Open Source Software"
+      subtitle:"Como e porque contribuir"
       fullWidth:true
       color:"#222"
       background:"#fff"
@@ -23,58 +27,162 @@
     /]
   [/Slide]
 
-  [Slide]
-    ## Project Overview
+  [Slide cssClass:"slide--image-only"]
+    ![codeminer logo](https://d2arqaup0tn1pp.cloudfront.net/assets/logo_codeminer42-dbb1f25e4ec14c50e7a253c107339d692ee9adce3ac6137706bc166295bc59e3.svg)
+    ![codeminer miner](https://d2arqaup0tn1pp.cloudfront.net/assets/home_page/we_are_codeminer_3-c0a4eb6665e3ec1a2c7e554a1751cd1d0835173767aa9c503b1b3cb48bd3125d.png)
+  [/Slide]
 
-* Extended Idyll to support authoring interactive slideshows
-* Bullet point 2
-* Bullet point 3
+  [Slide cssClass:"slide--image-only"]
+    ![contributions](https://i.imgur.com/bZedCpC.png)
   [/Slide]
 
   [Slide]
-    ## Idyll Slides
+    # O que é?
 
-* Idyll is a markup language for creating dynamic documents
-* Outputs JavaScript so can be combined with many graphics libraries
-* Typically targets essays / articles, but here I've extended to slideshows
+    Open source é um mecanismo de licenciamento e distribuição
 
-    ```
-      [Slideshow]
-        [Slide]
-          # My Slide Title
+    ### Livre para
+* Usar
+* Estudar
+* Modificar
+* Redistribuir
 
-          * Bullet point item 1
-          * Bullet point item 2
+    ### Processo
+* Aberto
+* Distribuido
+  [/Slide]
 
-          [Chart data:myDataset /]
-        [/Slide]
-      [/Slideshow]
-    ```
+  [Slide cssClass:"slide--with-image"]
+    #Licenças
+
+* Domínio público
+* Permissivas (MIT)
+* Restritivas (GPL)
+* Open source & software livre
+
+    ![oss](https://i.redd.it/cpmsiqye3b631.png)
+  [/Slide]
+
+  [Slide cssClass:"slide--tweet-center"]
+    [Tweet id:"1317061818574082050" parameters:`{ width: 620 }` /]
+  [/Slide]
+
+  [Slide cssClass:"slide--with-image"]
+    # Porque usar
+
+* Segurança
+* Acessibilidade
+* Transparência
+* Estabilidade/Perpetuidade
+* Interoperabilidade
+
+    ![linus](https://kwize.com/pics/Linus-Torvalds-quote-about-alchemy-2b9852.jpg)
+  [/Slide]
+
+  [Slide cssClass:"slide--with-image"]
+    # Porque usar
+
+* Flexibilidade
+* Treinamento
+* Comunidade
+* Divisão de custos/responsabilidade
+* Difusão de tecnologias
+
+  ![redux-issue-6](https://i.imgur.com/1ZeGNK2.png)
+  [/Slide]
+
+  [Slide cssClass:"slide--twitter-left"]
+
+    # Porque contribuir
+
+* Livre de remuneração
+* Engajamento com a comunidade
+* Feedback
+* Estudos
+* Exposição
+
+    [Tweet id:"766326390627131392" parameters:`{ width: 620 }` /]
+  [/Slide]
+
+  [Slide cssClass:"slide--twitter-left"]
+    #Procurando repositorios
+* Top 3 listas de repositórios
+    [Ident]
+* package.json
+* Gemfile
+* requirements. txt
+    [/Ident]
+* Pesquisa com filtros: 
+    [Ident]
+* `type:issue`
+* `state:open`
+* `label:hacktoberfest`
+* `label:"good first issue"`
+    [/Ident]
+* [Trending](https://github.com/trending), [Explore](https://github.com/explore), [Awesome lists](https://github.com/MunGell/awesome-for-beginners)
+
+    [Tweet id:"1308976994793783296" parameters:`{ width: 420 }` /]
   [/Slide]
 
   [Slide]
-    ## Image
+    # Tipos de contribuições
 
-    ![placekitten](http://placekitten.com/800/600)
+* Documentação
+* Tradução
+* Issues
+* Review
+* Implementação
   [/Slide]
 
   [Slide]
-    ## Map
+    # Antes de contribuir
 
-    [var name:"zoom" value:8 /]
-    [var name:"lat" value:47.6062 /]
-    [var name:"lon" value:-122.3321 /]
+* README.md
+* Licença
+* Issues
+* Pull Requests
+* CONTRIBUTING.md
+  [/Slide]
 
-    [ReactMapGL
-      width:'auto'
-      height:'65vh'
-      latitude:lat
-      longitude:lon
-      zoom:zoom
-      mapStyle:"mapbox://styles/mathisonian/cjurw8owq15tb1fomkfgdvycn"
-      mapboxApiAccessToken:"pk.eyJ1IjoibWF0aGlzb25pYW4iLCJhIjoiY2l5bTA5aWlnMDAwMDN1cGZ6Y3d4dGl6MSJ9.JZaRAfZOZfAnU2EAuybfsg"
-     /]
+  [Slide cssClass:"slide--twitter-left"]
+    # Contribuindo
 
-   [/Slide]
+* Fork
+* Git workflow
+* Pull request: feature-branch -> upstream/master
+
+    [Tweet id:"695505342487134209" parameters:`{ width: 500 }` /]
+  [/Slide]
+
+  [Slide cssClass:"slide--image-only"]
+    ![hacktoberfest](https://i.imgur.com/MFcbYyh.jpg)
+  [/Slide]
+
+  [Slide cssClass:"slide--tweet-center"]
+    [Tweet id:"1311646233128181760" parameters:`{ width: 620 }` /]
+  [/Slide]
+
+  [Slide cssClass:"slide--image-only"]
+    [a href:"https://www.codeminer42.com/careers"]
+      # We're hiring!
+    [/a]
+
+    [a href:"https://www.codeminer42.com/careers"]
+      ![cm42-logo](https://pbs.twimg.com/profile_images/1571702857/codeminer-logo_400x400.png)
+    [/a]
+  [/Slide]
+
+  [Slide]
+    # Saiba mais
+
+* [Open source & software livre](https://www.youtube.com/watch?v=FVy1fZhNSDA)
+* [Primeira contribuição](https://www.youtube.com/watch?v=c6b6B9oN4Vg)
+* [Git workflow](https://guides.github.com/introduction/flow/)
+* [Hacktoberfest](https://blog.domenic.me/hacktoberfest/)
+  [/Slide]
+
+  [Slide cssClass:"slide--large-text slide--center-text"]
+    # Obrigado!
+  [/Slide]
 
 [/Slideshow]
