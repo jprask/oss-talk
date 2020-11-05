@@ -6,10 +6,6 @@
 [var name:"currentSlide" value:0 /]
 [var name:"numSlides" value:0 /]
 
-[data name:"idyll" source:"idyll.json" /]
-[data name:"forem" source:"forem.json" /]
-[data name:"adminLTE" source:"adminLTE.json" /]
-
 [Slideshow currentSlide:currentSlide numSlides:numSlides fullWidth:true]
 
   [Slide]
@@ -95,7 +91,6 @@
 
     # Porque contribuir
 
-* Livre de remuneração
 * Engajamento com a comunidade
 * Feedback
 * Estudos
